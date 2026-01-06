@@ -1,0 +1,78 @@
+/* استایل کلی بدن */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+/* هدر پروژه */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+/* input و button */
+#taskInput {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#addBtn {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#addBtn:hover {
+  background-color: #45a049;
+}
+/* لیست کارها */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 250px;
+}
+li {
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+/* دکمه حذف */
+li button {
+  margin-left: 10px;
+  padding: 5px 8px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+li button:hover {
+  background-color: #e53935;
+}
+@media (max-width: 600px) {
+  #taskInput {
+    width: 150px;
+  }
+  ul {
+    width: 200px;
+  }
+  li {
+    font-size: 14px;
+    padding: 8px;
+  }
+  li button {
+    padding: 4px 6px;
+  }
+}
